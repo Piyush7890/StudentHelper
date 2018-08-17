@@ -32,7 +32,7 @@ This app lets you add notes.<br/>
 - This app provides facility to set password to your note.
 
 <p float="left">
-<img src="images/no_notes.png"   width="280" height="504"> 
+<img src="images/nonotes.png"   width="280" height="504"> 
   <img src="images/notes_linear.png"   width="280" height="504">
   <img src="images/notes_grid.png"   width="280" height="504">
 </p>
