@@ -1,1 +1,2 @@
-# Student Helper
+
+![](images/MAIN_IMAGE.png)
