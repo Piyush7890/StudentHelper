@@ -12,7 +12,11 @@ Check your attendance.<br/>
 Find out how many lectures you have bunked for a particular subject. <br/>
 Get overall attendance.
 
-#### I couldn't provide screenshots as the PICT ETH (Attendance) server is down. I will update it later.
+<p float="left">
+<img src="images/LOGIN.png"   width="280" height="504"> 
+  <img src="images/OVERALL.png"   width="280" height="504">
+  <img src="images/EXPAND.png"   width="280" height="504">
+</p>
 
 
 ### Manage your expenses
