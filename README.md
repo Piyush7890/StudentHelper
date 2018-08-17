@@ -3,4 +3,4 @@
 
 ## About
 
-![](images/about.png =100x20)
+<img src="images/about.png" alt="drawing" width="200px"/>
