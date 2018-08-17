@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/container"
+    android:clipToPadding="false"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/primary"
+        app:title="Dashboard"
+
+        />
+<ScrollView
+    android:layout_marginTop="?android:actionBarSize"
+    android:clipToPadding="false"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:clipToPadding="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+   <android.support.v7.widget.CardView
+       android:id="@+id/cview_intro"
+       android:background="#fafafa"
+       android:stateListAnimator="@animator/raise"
+android:clickable="true"
+       android:layout_margin="8dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:cardCornerRadius="2dp">
+       <RelativeLayout
+           android:stateListAnimator="@animator/raise"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="80dp"
+               android:scaleType="centerCrop"
+               android:src="@drawable/img_header_bg"/>
+           <ImageView
+               android:id="@+id/avatar"
+               android:layout_margin="16dp"
+               android:layout_width="48dp"
+               android:layout_height="48dp" />
+           <TextView
+               android:layout_marginEnd="40dp"
+               android:singleLine="true"
+               android:ellipsize="marquee"
+               android:paddingTop="12dp"
+               android:id="@+id/greet"
+               android:textColor="#3e3e3e"
+               android:fontFamily="sans-serif-medium"
+               android:textAppearance="@style/TextAppearance.AppCompat.Title"
+               tools:text="Good Morning, Piyush!"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_toRightOf="@id/avatar"/>
+           <TextView
+               android:id="@+id/sub_message"
+               android:layout_below="@id/greet"
+               android:textColor="#777777"
+               android:fontFamily="sans-serif-medium"
+               android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+               android:text="Stay Motivated"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_toRightOf="@id/avatar"/>
+
+           <android.support.design.widget.TextInputLayout
+android:visibility="gone"
+               android:layout_below="@id/avatar"
+               android:id="@+id/username_float_label"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+               app:hintTextAppearance="@style/TextAppearance.AppCompat.Caption">
+
+               <AutoCompleteTextView
+                   android:id="@+id/username"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="First Name"
+                   android:inputType="textEmailAddress"
+                   android:textColorHighlight="@color/colorPrimary"
+                   android:selectAllOnFocus="true" />
+
+           </android.support.design.widget.TextInputLayout>
+           <CheckBox
+               android:visibility="gone"
+android:onClick="mcheck"
+               android:layout_marginStart="16dp"
+               android:layout_marginEnd="16dp"
+               android:layout_marginBottom="8dp"
+               android:layout_below="@id/username_float_label"
+               android:id="@+id/male_cbox"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Male"/>
+           <CheckBox
+               android:visibility="gone"
+android:onClick="fcheck"
+               android:layout_below="@id/username_float_label"
+               android:layout_toEndOf="@id/male_cbox"
+               android:id="@+id/female_cbox"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Female"/>
+           <Button
+               android:onClick="applyChanges"
+               android:layout_marginBottom="16dp"
+               android:id="@+id/apply"
+               android:visibility="gone"
+               android:textColor="@color/md_dark_primary_text"
+               android:backgroundTint="@color/colorPrimary"
+               android:text="APPLY"
+               android:layout_below="@id/female_cbox"
+               android:layout_centerHorizontal="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <ImageView
+               android:layout_centerVertical="true"
+               android:layout_marginTop="16dp"
+               android:scaleType="fitXY"
+               android:layout_width="24dp"
+               android:layout_height="24dp"
+               android:id="@+id/time_image"
+               android:layout_alignParentEnd="true"
+               android:layout_marginEnd="16dp"
+               />
+           
+           
+       </RelativeLayout>
+
+
+   </android.support.v7.widget.CardView>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/attendance_cview"
+        android:stateListAnimator="@animator/raise"
+        android:clickable="true"
+        app:cardCornerRadius="4dp"
+        android:layout_weight="1"
+        android:layout_margin="8dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#346ef3">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/attendance"
+                android:textColor="@android:color/white"
+                android:fontFamily="sans-serif-medium"
+                android:fontFeatureSettings="scmp,onum"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:layout_gravity="center"
+                android:padding="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 %"/>
+            <TextView
+                android:paddingBottom="8dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#ffffff"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Attendance"/>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#ffffff"
+    android:alpha="0.5"
+    />
+            <TextView
+                android:onClick="onAttendanceClick"
+                android:clickable="true"
+                android:foreground="?android:selectableItemBackground"
+android:id="@+id/view_more_attendance"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:alpha="0.8"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="VIEW MORE"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:stateListAnimator="@animator/raise"
+            android:clickable="true"
+
+            app:cardCornerRadius="4dp"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#f8b10c">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/notes_count"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="sans-serif-medium"
+                    android:fontFeatureSettings="scmp,onum"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_gravity="center"
+                    android:padding="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"/>
+                <TextView
+                    android:paddingBottom="8dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#ffffff"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notes Taken"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ffffff"
+                    android:alpha="0.5"
+                    />
+                <TextView
+                    android:onClick="onNotesClick"
+
+                    android:clickable="true"
+                    android:foreground="?android:selectableItemBackground"
+                    android:id="@+id/view_more_notes"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:alpha="0.8"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="VIEW MORE"
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+<include layout="@layout/balance_layout"/>
+
+</LinearLayout>
+</ScrollView>
+</FrameLayout>

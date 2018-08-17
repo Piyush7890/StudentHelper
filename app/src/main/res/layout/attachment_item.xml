@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.mamid.studenthelper.Utils.RoundedFrameLayout
+android:foreground="?android:selectableItemBackground"
+    android:stateListAnimator="@animator/raise"
+    android:layout_marginStart="2dp"
+    android:layout_marginEnd="2dp"
+    android:layout_marginTop="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        android:layout_height="match_parent"
+        android:id="@+id/attachment_image"
+        android:layout_width="match_parent">
+
+
+</ImageView>
+
+    <TextView
+        android:id="@+id/attachment_title"
+        android:padding="8dp"
+        tools:text="jfaoa"
+        android:textColor="@android:color/white"
+        android:background="@color/scrim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"/>
+</com.example.mamid.studenthelper.Utils.RoundedFrameLayout>

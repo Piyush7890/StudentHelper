@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+android:id="@+id/header_cview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="2dp">
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/md_dark_primary_text"
+        android:id="@+id/name_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Piyush Ganesh Mamidwar"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="4dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        />
+    <TextView
+        android:id="@+id/grade"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        android:alpha="0.8"
+        app:layout_constraintTop_toBottomOf="@id/name_student"
+        tools:text="FE COMP"
+        android:paddingStart="16dp"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/division"
+        android:paddingTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        android:alpha="0.8"
+        app:layout_constraintTop_toBottomOf="@id/grade"
+        tools:text="Division IV"
+        android:paddingStart="16dp"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <FrameLayout
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+    <com.example.mamid.studenthelper.Utils.CustomArc
+        android:id="@+id/percent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/percent_num"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="100.00"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            />
+    </FrameLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

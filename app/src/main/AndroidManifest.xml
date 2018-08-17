@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mamid.studenthelper">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".StudentHelper"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BalanceActivity"
+            android:theme="@style/AppTheme.Balance" />
+        <activity
+            android:name=".AddBalance"
+            android:theme="@style/AppTheme.AddBalance" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Login"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".AttendanceActivity" />
+        <activity
+            android:name=".NotesActivity"
+            android:theme="@style/Notes" />
+        <activity
+            android:name=".NotesDetailActivity"
+            android:theme="@style/AddNote" />
+        <activity android:name=".AboutActivity"
+            android:theme="@style/AppTheme.About"
+            />
+    </application>
+
+</manifest>

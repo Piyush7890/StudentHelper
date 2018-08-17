@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        style="@style/attachment_text"
+android:id="@+id/camera_attachment_menu"
+        android:gravity="center_vertical"
+        android:drawablePadding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_camera"
+        android:text="Camera"/>
+
+    <TextView
+        android:foreground="?android:selectableItemBackground"
+
+        android:paddingTop="8dp"
+        android:paddingStart="16dp"
+        android:paddingBottom="8dp"
+        android:paddingEnd="16dp"
+
+        style="@style/attachment_text"
+android:id="@+id/file_attachment_menu"
+        android:gravity="center_vertical"
+        android:drawablePadding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_file"
+        android:text="Files"
+        />
+
+    <TextView
+        android:foreground="?android:selectableItemBackground"
+        android:paddingTop="8dp"
+        android:paddingStart="16dp"
+        android:paddingBottom="8dp"
+        android:paddingEnd="16dp"
+        style="@style/attachment_text"
+        android:id="@+id/sketch_attachment_menu"
+        android:gravity="center_vertical"
+        android:drawablePadding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_paint"
+        android:text="Sketch"
+        />
+
+
+
+    <TextView
+        android:foreground="?android:selectableItemBackground"
+        android:paddingTop="8dp"
+        android:paddingStart="16dp"
+        android:paddingBottom="16dp"
+        android:paddingEnd="16dp"
+        android:id="@+id/time_attachment_menu"
+        style="@style/attachment_text"
+        android:gravity="center_vertical"
+        android:drawablePadding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_time"
+        android:text="Current time"/>
+
+
+</LinearLayout>

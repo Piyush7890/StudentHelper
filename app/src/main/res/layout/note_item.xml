@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:id="@+id/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="1dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/title"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        tools:text="Hello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="2dp"
+        android:textColor="#de000000"
+        android:ellipsize="end"
+        />
+        <TextView
+            android:layout_below="@id/title"
+            android:id="@+id/time"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:fontFamily="sans-serif"
+            tools:text="Lorem ipsum had a bike"
+            android:textColor="#b3000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="12dp"
+            android:ellipsize="end"
+
+            />
+        <ImageView
+            android:id="@+id/lock"
+            android:visibility="gone"
+            android:src="@drawable/ic_lock_blacck_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+    
+</android.support.v7.widget.CardView>

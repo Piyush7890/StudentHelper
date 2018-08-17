@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="match_parent"
+    android:id="@+id/parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_gravity="top"
+        app:titleTextColor="#3e3e3e"
+        android:elevation="2dp"
+        app:title="Notes"
+        android:background="#ffffff"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"/>
+
+    <LinearLayout
+        android:layout_marginTop="?android:actionBarSize"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container">
+
+    <com.example.mamid.studenthelper.Utils.SquareImageView
+        android:id="@+id/no_notes_img"
+        android:src="@drawable/ic_no_notes"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+        <TextView
+android:lineSpacingMultiplier="1.3"
+            android:textColor="#3e3e3e"
+            android:alpha="0.6"
+
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="There is no note available.\nPress '+' button to add new note."/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="?android:actionBarSize"
+        android:padding="4dp"
+        android:clipToPadding="false"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/notelist"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_gravity="bottom|end"
+        android:id="@+id/add_btn"
+        android:src="@drawable/ic_add_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp" />
+
+    <FrameLayout
+        android:id="@+id/fab_expand"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="4dp"
+        android:visibility="invisible" />
+</android.support.design.widget.CoordinatorLayout>

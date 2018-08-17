@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:layout_width="match_parent"
+    android:ellipsize="end"
+    android:maxLines="1"
+    android:layout_height="wrap_content"
+    android:background="@drawable/filter_bg"
+    android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+    android:drawablePadding="8dp"
+    android:fontFamily="sans-serif-medium"
+    android:padding="8dp"
+    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+    android:textColor="#3e3e3e"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

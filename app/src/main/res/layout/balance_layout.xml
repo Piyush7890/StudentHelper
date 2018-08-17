@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:paddingBottom="8dp"
+    android:clipToPadding="false"
+    android:stateListAnimator="@animator/raise"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:fontFeatureSettings="scmp,onum"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:padding="16dp"
+            android:id="@+id/remaining_balance"
+            android:textColor="#00aa70"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ 350"/>
+        <TextView
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textColor="#212121"
+            android:fontFamily="sans-serif-medium"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:paddingStart="16dp"
+            android:paddingBottom="16dp"
+            android:text="Remaining Balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/remaining_balance"/>
+        <TextView
+            android:fontFeatureSettings="scmp,onum"
+
+            app:layout_constraintRight_toRightOf="parent"
+            android:padding="16dp"
+            android:id="@+id/spent_amount"
+            android:textColor="#f44336"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ 350"/>
+        <TextView
+            android:id="@+id/amount_spent_title"
+            android:paddingEnd="16dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textColor="#212121"
+            android:fontFamily="sans-serif-medium"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:paddingStart="16dp"
+            android:paddingBottom="16dp"
+            android:text="Amount Spent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/spent_amount"/>
+
+
+<View
+    android:id="@+id/divider"
+    android:background="#e0e0e0"
+    app:layout_constraintTop_toBottomOf="@id/amount_spent_title"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"/>
+        <TextView
+            android:onClick="onBalanceClick"
+            android:clickable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:alpha="0.8"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="#0076ff"
+            android:gravity="center"
+            android:text="VIEW MORE"
+            app:layout_constraintTop_toBottomOf="@id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"/>
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

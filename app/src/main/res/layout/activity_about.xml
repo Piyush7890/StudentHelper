@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/container_img"
+            android:orientation="vertical"
+            android:background="#f2f2f2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                app:title=" "
+                android:layout_width="match_parent"
+                android:layout_height="?android:actionBarSize"
+                android:background="#f2f2f2"
+                />
+            <ImageView
+                
+                android:src="@drawable/product_logo"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                />
+
+            <TextView
+                android:fontFamily="sans-serif"
+                android:textColor="#383838"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Welcome to the \n Student Helper app!"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:paddingBottom="32dp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/features_container"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:paddingTop="32dp"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:layout_below="@id/container_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Features of this app"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"/>
+            <TextView
+                android:fontFamily="sans-serif"
+                android:lineSpacingMultiplier="1.2"
+                android:text="- Check your attendance\n- Attendance is saved offline\n- Manage your expenses\n- Take notes\n- Attach files, sketches, photos to your notes\n- Lock your notes\n- And many more!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+                android:textColor="#757575"/>
+            <TextView
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#383838"
+                android:gravity="center"
+                android:paddingTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View source code on Github."
+                />
+            <Button
+                android:textStyle="normal"
+                android:layout_marginBottom="32dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GITHUB"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:backgroundTint="@color/colorPrimary"
+                />
+        </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+

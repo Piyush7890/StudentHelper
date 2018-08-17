@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4285f4</color>
+    <color name="colorPrimaryDark">#3974d4</color>
+    <color name="colorAccent">#4285f4</color>
+    <color name="scrim">#99323232</color>
+    <color name="text_primary_dark">#de000000</color>
+
+    <color name="darkblue">#5e97f6</color>
+    <color name="yellow">#fdd835</color>
+    <color name="orange">#f18864</color>
+    <color name="blue">#47c3f7</color>
+    <color name="purple">#9575cd</color>
+    <color name="green">#d4e157</color>
+    <color name="midgreen">#689f38</color>
+    <color name="darkgreen">#00897b</color>
+    <color name="pink">#ed6192</color>
+    <color name="lime">#cbfc59</color>
+    <color name="bblue">#58c0fc</color>
+
+
+    <color name="scondary_text_default_material_light">#99FFFFFF</color>
+    <color name="scondary_text_default_material_dark">#99000000</color>
+    <color name="pimary_text_default_material_light">#DDFFFFFF</color>
+    <color name="pimary_text_default_material_dark">#DD000000</color>
+
+    <array name="colors">
+        <item>@color/darkblue</item>
+        <item>@color/blue</item>
+        <item>@color/yellow</item>
+        <item>@color/orange</item>
+        <item>@color/green</item>
+        <item>@color/pink</item>
+        <item>@color/midgreen</item>
+        <item>@color/purple</item>
+        <item>@color/darkgreen</item>
+        <item>@color/lime</item>
+        <item>@color/bblue</item>
+    </array>
+
+    <array name="category_colors">
+        <item>#b3b3b3</item>
+        <item>#75d0f9</item>
+        <item>#ffba55</item>
+        <item>#95a8b1</item>
+        <item>#bc37ff</item>
+        <item>#85e449</item>
+        <item>#788cf3</item>
+        <item>#37cdb8</item>
+        <item>#ff699c</item>
+        <item>#fcce5a</item>
+        <item>#ff6737</item>
+
+
+    </array>
+
+    <color name="c1">#fafafa</color>
+    <color name="c2">#ff8a80</color>
+    <color name="c3">#ffd180</color>
+    <color name="c4">#ffff8d</color>
+    <color name="c5">#ccff90</color>
+    <color name="c6">#a7ffeb</color>
+    <color name="c7">#80d8ff</color>
+    <color name="c8">#82b1ff</color>
+    <color name="c9">#b388ff</color>
+    <color name="c10">#f8bbd0</color>
+    <color name="c11">#cfd8dc</color>
+
+    <array name="note_colors">
+        <item>@color/c1</item>
+        <item>@color/c2</item>
+        <item>@color/c3</item>
+        <item>@color/c4</item>
+        <item>@color/c5</item>
+        <item>@color/c6</item>
+        <item>@color/c7</item>
+        <item>@color/c8</item>
+        <item>@color/c9</item>
+        <item>@color/c10</item>
+        <item>@color/c11</item>
+
+
+
+    </array>
+
+</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:elevation="4dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_marginTop="48dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    android:padding="24dp"
+    tools:context=".AddBalance"
+    android:transitionName="SharedDialog"
+    android:background="@drawable/dialog_background">
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="16"
+            android:imeOptions="actionNext"
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Amount"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            app:met_singleLineEllipsis="true"
+            app:met_baseColor="#3e3e3e"
+            app:met_primaryColor="@color/primary"
+            android:layout_marginBottom="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            />
+
+    <TextView
+android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_vertical"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:textColor="#3e3e3e"
+        android:paddingBottom="16dp"
+        android:id="@+id/category"
+        android:text="Category"
+        android:layout_below="@id/amount"
+        android:background="#00ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:layout_marginBottom="16dp"
+        android:scrollbars="none"
+        android:popupBackground="@drawable/filtersbg"
+        style="@style/SpinnerAsEditText"
+        android:id="@+id/category_spinner"
+        android:paddingStart="16dp"
+        android:layout_below="@id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/category"
+        />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:inputType="textCapSentences"
+        app:met_floatingLabel="highlight"
+        app:met_singleLineEllipsis="true"
+        app:met_baseColor="#3e3e3e"
+        app:met_primaryColor="@color/primary"
+        android:layout_below="@id/category"
+
+        android:layout_marginTop="8dp"
+        android:imeOptions="actionNext"
+        android:paddingBottom="16dp"
+        android:id="@+id/title"
+        android:hint="Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:text=""
+        app:met_floatingLabel="highlight"
+        app:met_baseColor="#3e3e3e"
+        app:met_primaryColor="@color/primary"
+        android:layout_below="@id/title"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="16dp"
+        android:id="@+id/description"
+        android:hint="Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+
+        android:elevation="0dp"
+        android:id="@+id/add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Add"
+        android:textColor="@color/md_white_1000"
+        android:layout_below="@id/description"
+        android:layout_alignParentStart="true"/>
+    <Button
+        android:foreground="?android:selectableItemBackground"
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:background="@android:color/transparent"
+
+        android:text="Cancel"
+        android:textColor="@color/primary"
+        android:layout_below="@id/description"
+        android:layout_alignParentEnd="true"/>
+    
+
+</RelativeLayout>
