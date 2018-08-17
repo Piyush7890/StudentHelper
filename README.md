@@ -3,4 +3,4 @@
 
 ## About
 
-![](images/about.png)
+![](images/about.png) <!-- .element height="50%" width="50%" -->
