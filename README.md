@@ -1,5 +1,5 @@
 
 
-![](images/MAIN_IMAGE.png)
+<img src="images/MAIN_IMAGE.png" >
 
 ## About
